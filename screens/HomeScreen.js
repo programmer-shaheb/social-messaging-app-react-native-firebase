@@ -41,7 +41,15 @@ const HomeScreen = ({ navigation }) => {
       headerLeft: () => (
         <View style={{ marginLeft: 20 }}>
           <TouchableOpacity activeOpacity={0.5} onPress={signOutUser}>
-            <Avatar rounded source={{ uri: auth?.currentUser?.photoURL }} />
+            <SimpleLineIcons name="logout" size={24} color="black" />
+            {/* <Avatar
+              rounded
+              source={{
+                uri:
+                  auth?.currentUser?.photoURL ||
+                  "https://thumbs.dreamstime.com/b/creative-illustration-default-avatar-profile-placeholder-isolated-background-art-design-grey-photo-blank-template-mockup-144847501.jpg",
+              }}
+            /> */}
           </TouchableOpacity>
         </View>
       ),
